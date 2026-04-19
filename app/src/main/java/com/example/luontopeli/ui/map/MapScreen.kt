@@ -141,7 +141,13 @@ fun MapScreen(
                             position = GeoPoint(spot.latitude, spot.longitude)
                             // Näytä kasvin nimi tai kohteen nimi info-ikkunassa
                             title = spot.plantLabel ?: spot.name
-                            snippet = spot.timestamp.toFormattedDate()
+                            snippet = buildString {
+                                append(spot.timestamp.toFormattedDate())
+                                spot.comment?.let {
+                                    append("\n")
+                                    append(it)
+                                }
+                            }
                             setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
                         }
                         mapView.overlays.add(marker)
