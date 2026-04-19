@@ -1,0 +1,20 @@
+<!-- res/drawable/ic_launcher_foreground.xml -->
+<!-- Yksinkertainen lehti-ikoni -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Lehden muoto vihreällä -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 C54,20 80,35 80,60
+            C80,75 68,85 54,85
+            C40,85 28,75 28,60
+            C28,35 54,20 54,20Z" />
+    <!-- Lehden suoni -->
+    <path
+        android:strokeColor="#A5D6A7"
+        android:strokeWidth="2"
+        android:pathData="M54,20 L54,85" />
+</vector>

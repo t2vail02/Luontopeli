@@ -1,0 +1,15 @@
+<!-- res/values/themes.xml -->
+<resources>
+    <!-- Splash-teema: näytetään sovelluksen käynnistyessä -->
+    <style name="Theme.LuontopeliSplash" parent="Theme.SplashScreen">
+        <!-- Splash-näytön taustaväri -->
+        <item name="windowSplashScreenBackground">@color/green_800</item>
+        <!-- Keskelle tuleva ikoni (adaptivesta ikonista) -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Teema johon vaihdetaan splash-näytön jälkeen -->
+        <item name="postSplashScreenTheme">@style/Theme.Luontopeli</item>
+    </style>
+
+    <!-- Pääteema (M3) -->
+    <style name="Theme.Luontopeli" parent="Theme.AppCompat.DayNight.NoActionBar" />
+</resources>
